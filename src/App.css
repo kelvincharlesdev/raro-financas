@@ -1,0 +1,7 @@
+main {
+    display: flex;
+    height: calc(100vh - 151px);
+    flex-direction: column;
+    gap: 32px;
+    background-color: #E2E8F0;
+}

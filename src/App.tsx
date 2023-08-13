@@ -1,6 +1,7 @@
 import './App.css';
 import { Dash } from './components/Dash';
 import { Header } from './components/Header';
+import { Transations } from './components/Transations';
 
 function App() {
   return (
@@ -8,6 +9,8 @@ function App() {
       <Header />
       <main>
           <Dash/>
+
+          <Transations />
 
 
       </main>

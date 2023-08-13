@@ -3,7 +3,7 @@ import './style.css';
 export const Header = () => {
   return (
     <header>
-      <div className="header-container">
+      <div className="container">
         <figure className="logo">
           <img src="src/assets/credit-card.svg" alt="Imagem de finanças" />
           <figcaption className="logo-title">Raro Finanças</figcaption>

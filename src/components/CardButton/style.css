@@ -1,0 +1,32 @@
+.btn {
+  display: flex;
+  height: 120px;
+  max-width: 276px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex: 1 0 0;
+  border-radius: 11px;
+  border: 1px solid var(--background-footer);
+  background-color: var(--background-header);
+  box-shadow: 5px 15px 30px -5px var(--color-box-shadow);
+  cursor: pointer;
+}
+
+.btn .h2 {
+  color: var(--background-card-modal);
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.img-plus {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: var(--background-svg-plus);
+}

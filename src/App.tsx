@@ -1,5 +1,6 @@
 import './App.css';
 import { Dash } from './components/Dash';
+import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 import { Transations } from './components/Transations';
 
@@ -11,6 +12,7 @@ function App() {
         <Dash />
         <Transations />
       </main>
+      <Footer/>
     </>
   );
 }

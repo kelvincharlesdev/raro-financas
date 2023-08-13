@@ -5,6 +5,7 @@
 }
 
 .transations .container {
+  display: block;
   border-radius: 20px;
   background: var(--backgorund-cards);
   box-shadow: 5px 15px 30px -5px var(--color-box-shadow);

@@ -1,0 +1,25 @@
+footer {
+  display: flex;
+  padding: 20px 120px;
+  background: var(--background-footer);
+  height: 61px;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nome-aluno {
+  color: var(--color-text);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.nome-ecsola {
+    color: var(--color-text);
+    font-size: 14px;
+    font-weight: 400;
+  }

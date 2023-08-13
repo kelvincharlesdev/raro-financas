@@ -1,3 +1,5 @@
+import "./style.css"
+
 interface ITrows {
   nome: string;
   data: string;

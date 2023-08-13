@@ -10,7 +10,7 @@ export const CardButton = () => {
           alt="Imagem de finanças"
         />
       </figure>
-      <h2>TRANSAÇÃO</h2>
+      <h2 className='title-transacao'>TRANSAÇÃO</h2>
       
     </button>
   );

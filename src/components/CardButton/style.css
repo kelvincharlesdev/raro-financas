@@ -10,11 +10,14 @@
   border: 1px solid var(--background-footer);
   background-color: var(--background-header);
   box-shadow: 5px 15px 30px -5px var(--color-box-shadow);
+  cursor: pointer;
+}
+
+.btn .h2 {
   color: var(--background-card-modal);
-  font-family: 'Inter', sans-serif ;
+  font-family: 'Inter', sans-serif;
   font-size: 24px;
   font-weight: 800;
-  cursor: pointer;
 }
 
 .img-plus {

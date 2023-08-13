@@ -1,4 +1,5 @@
 import './App.css';
+import { Dash } from './components/Dash';
 import { Header } from './components/Header';
 
 function App() {
@@ -6,6 +7,8 @@ function App() {
     <>
       <Header />
       <main>
+          <Dash/>
+
 
       </main>
     </>

@@ -8,11 +8,8 @@ function App() {
     <>
       <Header />
       <main>
-          <Dash/>
-
-          <Transations />
-
-
+        <Dash />
+        <Transations />
       </main>
     </>
   );

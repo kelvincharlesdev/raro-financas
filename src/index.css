@@ -8,6 +8,8 @@
   --background-main: #e2e8f0;
   --background-footer: #cbd5e1;
   --background-card-modal: #f1f5f9;
+  --background-modal-tranparent:  rgba(0, 0, 0, 0.50);
+  --background-white: #ffffff;
 
   --color-text-header: #eff6ff;
   --color-text-title-h3: #94a3b8;
@@ -21,6 +23,9 @@
   --background-svg-up: #dcfce7;
   --background-svg-down: #FEE2E2;
   --background-svg-plus: #dbeafe;
+
+  --color-hover-input: #633bbc;
+
 }
 
 * {
@@ -33,6 +38,14 @@ body {
   font-family: 'Mulish', sans-serif;
   min-height: 100vh;
   width: 100%;
+}
+
+button{
+  border: none;
+}
+
+input{
+  outline: none;
 }
 
 .container{

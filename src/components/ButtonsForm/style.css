@@ -1,0 +1,24 @@
+.btn-modal {
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  border-radius: 12px;
+  background: var(--background-card-modal);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Mulish', sans-serif;
+  cursor: pointer;
+}
+
+.btn-modal.cancelar {
+  color: var(--background-color-btn-modal);
+  border: 2px solid var(--background-color-btn-modal);
+}
+
+.btn-modal.adicionar {
+  background: var(--background-color-btn-modal);
+  color: var(--background-card-modal);
+}

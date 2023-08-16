@@ -1,4 +1,3 @@
-
 import { ITransaction } from '../../types';
 import { ButtonForm } from '../ButtonsForm';
 import { Input } from '../Input';
@@ -6,25 +5,30 @@ import { Input } from '../Input';
 import './style.css';
 
 interface IForm {
-  callBack: ( transacaoInformacao : ITransaction) =>  void;
+  callBack: (transacaoInformacao: ITransaction) => void;
   fecharModal: (mostratModal: boolean) => void;
 }
 
 export const Form = ({ callBack, fecharModal }: IForm) => {
- 
-  const transacaoInformacao = (e : React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); 
-   
+  const transacaoInformacao = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
     const inputValue = {
-      nome: (e.currentTarget.elements.namedItem('name') as HTMLInputElement).value,
-      data: (e.currentTarget.elements.namedItem('data') as HTMLInputElement).value,
-      categoria: (e.currentTarget.elements.namedItem('categoria') as HTMLInputElement).value,
-      valor: (e.currentTarget.elements.namedItem('valor') as HTMLInputElement).value,
-      tipo: (e.currentTarget.elements.namedItem('tipo') as HTMLInputElement).value,
+      nome: (e.currentTarget.elements.namedItem('name') as HTMLInputElement)
+        .value,
+      data: (e.currentTarget.elements.namedItem('data') as HTMLInputElement)
+        .value,
+      categoria: (
+        e.currentTarget.elements.namedItem('categoria') as HTMLInputElement
+      ).value,
+      valor: (e.currentTarget.elements.namedItem('valor') as HTMLInputElement)
+        .value,
+      tipo: (e.currentTarget.elements.namedItem('tipo') as HTMLInputElement)
+        .value
     };
 
-    callBack(inputValue) 
-    e.currentTarget.reset()
+    callBack(inputValue);
+    e.currentTarget.reset();
   };
 
   return (
@@ -38,7 +42,6 @@ export const Form = ({ callBack, fecharModal }: IForm) => {
           type="text"
           name="name"
           placeholder="Digite o nome da sua transação"
-        
         />
 
         <Input
@@ -47,7 +50,6 @@ export const Form = ({ callBack, fecharModal }: IForm) => {
           type="date"
           name="data"
           placeholder="Digite o nome da sua transação"
-         
         />
 
         <Input
@@ -56,7 +58,6 @@ export const Form = ({ callBack, fecharModal }: IForm) => {
           type="text"
           name="categoria"
           placeholder="Digite a categoria da transação"
-         
         />
 
         <Input
@@ -65,20 +66,13 @@ export const Form = ({ callBack, fecharModal }: IForm) => {
           type="number"
           name="valor"
           placeholder="Digite o valor da sua transação"
-       
         />
 
         <div className="input">
           <label htmlFor="tipo">Tipo</label>
 
           <div className="input-radio">
-            <input
-              type="radio"
-              id="entrada"
-              name="tipo"
-              value="+"
-              required
-            />
+            <input type="radio" id="entrada" name="tipo" value="+" required />
             <label htmlFor="entrada">
               <img src="src/assets/trending-up.svg" alt="Imagem tranding up" />
               Entrada

@@ -1,4 +1,4 @@
-header{
+header {
   background: var(--background-header);
   padding: 20px 20px;
   height: 90px;
@@ -46,25 +46,22 @@ header .container {
   font-weight: 400;
 }
 
-.user-img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
+.user-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
 }
 
-
-@media(max-width:570px){
-
-  .logo-title{
+@media (max-width: 570px) {
+  .logo-title {
     font-size: 20px;
   }
 
-  .user-name{
+  .user-name {
     font-size: 12px;
   }
 
-  .user-email{
+  .user-email {
     font-size: 10px;
   }
-
 }

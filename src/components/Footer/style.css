@@ -19,26 +19,25 @@ footer {
 }
 
 .school-name {
-    color: var(--color-text);
-    font-size: 14px;
-    font-weight: 400;
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: 400;
 }
 
-@media(max-width:850px ){
-
-  footer{
+@media (max-width: 850px) {
+  footer {
     padding: 10px 120px;
   }
 
-  footer .container{
+  footer .container {
     flex-direction: column;
   }
 
-  .student-name{
+  .student-name {
     font-size: 12px;
   }
 
-  .school-name{
+  .school-name {
     font-size: 10px;
     text-align: center;
   }

@@ -16,13 +16,13 @@ th {
   color: var(--backgorund-body-label);
   font-size: 14px;
   font-weight: 700;
-  position: sticky;   
+  position: sticky;
   top: 0;
   background-color: var(--backgorund-cards);
-
 }
 
-th,td {
+th,
+td {
   text-align: center;
   padding: 12px;
 }
@@ -31,5 +31,3 @@ th,td {
   width: 30px;
   height: 18px;
 }
-
-

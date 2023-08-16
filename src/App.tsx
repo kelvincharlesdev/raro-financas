@@ -1,4 +1,3 @@
-import './App.css';
 import { Dash } from './components/Dash';
 import { Footer } from './components/Footer';
 import { Header } from './components/Header';
@@ -19,23 +18,27 @@ const transactionData: ITransaction[] = [
 
 function App() {
   const [mostrarModal, setMostratModal] = useState<boolean>(false);
-  const [transations, setTransations] = useState<ITransaction[]>(transactionData);
+  const [transations, setTransations] =
+    useState<ITransaction[]>(transactionData);
 
-  const somaDash = transations.reduce((acc, itemTransaction) => {
-    if (itemTransaction.tipo === '+') {
-      acc.entradas += Number(itemTransaction.valor)
-      acc.total += Number(itemTransaction.valor)
-    } else {
-      acc.saidas += Number(itemTransaction.valor)
-      acc.total -= Number(itemTransaction.valor)
+  const somaDash = transations.reduce(
+    (acc, itemTransaction) => {
+      if (itemTransaction.tipo === '+') {
+        acc.entradas += Number(itemTransaction.valor);
+        acc.total += Number(itemTransaction.valor);
+      } else {
+        acc.saidas += Number(itemTransaction.valor);
+        acc.total -= Number(itemTransaction.valor);
+      }
+
+      return acc;
+    },
+    {
+      entradas: 0,
+      saidas: 0,
+      total: 0
     }
-    
-    return acc;
-  }, {
-    entradas: 0,
-    saidas: 0,
-    total: 0
-  });
+  );
 
   return (
     <>

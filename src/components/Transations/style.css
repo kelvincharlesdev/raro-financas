@@ -2,7 +2,6 @@
   display: flex;
   flex: 1 0 0;
   padding: 0 20px;
-  
 }
 
 .transations .container {
@@ -13,23 +12,20 @@
   height: 100%;
   padding: 24px;
   max-height: calc(100vh - 367px);
-  
 }
 
-
-.transation-table{
+.transation-table {
   overflow: auto;
   max-height: calc(100vh - 425px);
 }
 
-@media(max-width: 920px){
+@media (max-width: 920px) {
   .transations .container {
     max-height: calc(100vh - 425px);
   }
-  
-  .transation-table{
+
+  .transation-table {
     overflow: auto;
     max-height: calc(100vh - 483px);
   }
-
 }

@@ -28,15 +28,23 @@ export const Dash = ({ callback, entradas, saidas, saldo }: IDash) => {
           tipo="Saida"
           svg="trending-down.svg"
           color="var(--background-svg-down)"
-          cardValue={ Number(saidas).toLocaleString('pt-BR', {
-            style: 'currency',
-            currency: 'BRL'
-          }) ?? '0'}
-        />
-        <Card tipo="Saldo" svg="dolar.svg" cardValue={ Number(saldo).toLocaleString('pt-BR', {
+          cardValue={
+            Number(saidas).toLocaleString('pt-BR', {
               style: 'currency',
               currency: 'BRL'
-            }) ?? '0'} />
+            }) ?? '0'
+          }
+        />
+        <Card
+          tipo="Saldo"
+          svg="dolar.svg"
+          cardValue={
+            Number(saldo).toLocaleString('pt-BR', {
+              style: 'currency',
+              currency: 'BRL'
+            }) ?? '0'
+          }
+        />
         <CardButton callback={callback} />
       </div>
     </section>

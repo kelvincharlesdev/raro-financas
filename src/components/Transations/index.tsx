@@ -6,7 +6,7 @@ interface ITransactions {
   transactions: ITransaction[];
 }
 
-export const Transations = ({transactions}: ITransactions) => {
+export const Transations = ({ transactions }: ITransactions) => {
   return (
     <section className="transations">
       <div className="container">

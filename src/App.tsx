@@ -1,35 +1,72 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Dash } from './components/Dash';
+import { Footer } from './components/Footer';
+import { Header } from './components/Header';
+import { Modal } from './components/Modal';
+import { Transations } from './components/Transations';
+import { useState } from 'react';
+import { ITransaction } from './types';
+
+const transactionData: ITransaction[] = [
+  {
+    nome: 'Kelvin Charles da Cruz',
+    data: '2023-08-01',
+    categoria: 'Prêmio da Mega-Sena',
+    valor: '700000',
+    tipo: '+'
+  }
+];
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [mostrarModal, setMostratModal] = useState<boolean>(false);
+  const [transations, setTransations] =
+    useState<ITransaction[]>(transactionData);
+
+  const somaDash = transations.reduce(
+    (acc, itemTransaction) => {
+      if (itemTransaction.tipo === '+') {
+        acc.entradas += Number(itemTransaction.valor);
+        acc.total += Number(itemTransaction.valor);
+      } else {
+        acc.saidas += Number(itemTransaction.valor);
+        acc.total -= Number(itemTransaction.valor);
+      }
+
+      return acc;
+    },
+    {
+      entradas: 0,
+      saidas: 0,
+      total: 0
+    }
+  );
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Header />
+      <main>
+        <Modal
+          mostrarModal={mostrarModal}
+          fecharModal={(mostrarModal: boolean) => setMostratModal(mostrarModal)}
+          callBack={transacaoInformacao => {
+            setMostratModal(false);
+            setTransations(transacaoAtual => [
+              transacaoInformacao,
+              ...transacaoAtual
+            ]);
+          }}
+        />
+        <Dash
+          callback={() => setMostratModal(true)}
+          entradas={somaDash.entradas.toString()}
+          saidas={somaDash.saidas.toString()}
+          saldo={somaDash.total.toString()}
+        />
+
+        <Transations transactions={transations} />
+      </main>
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

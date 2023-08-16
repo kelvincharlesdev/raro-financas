@@ -1,0 +1,21 @@
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: var(--background-modal-tranparent);
+  display: none;
+  z-index: 1;
+}
+
+.content-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.open {
+  display: block;
+}

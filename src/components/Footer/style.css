@@ -1,0 +1,44 @@
+footer {
+  display: flex;
+  padding: 20px 120px;
+  background: var(--background-footer);
+  height: 61px;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.student-name {
+  color: var(--color-text);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.school-name {
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media (max-width: 850px) {
+  footer {
+    padding: 10px 120px;
+  }
+
+  footer .container {
+    flex-direction: column;
+  }
+
+  .student-name {
+    font-size: 12px;
+  }
+
+  .school-name {
+    font-size: 10px;
+    text-align: center;
+  }
+}

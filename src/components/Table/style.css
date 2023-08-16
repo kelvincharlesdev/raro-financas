@@ -1,0 +1,33 @@
+.table {
+  border-collapse: collapse;
+  max-width: 1152px;
+  width: 100%;
+  max-height: calc(100vh - 367px);
+}
+
+.title-transations {
+  color: var(--color-text);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+th {
+  color: var(--backgorund-body-label);
+  font-size: 14px;
+  font-weight: 700;
+  position: sticky;
+  top: 0;
+  background-color: var(--backgorund-cards);
+}
+
+th,
+td {
+  text-align: center;
+  padding: 12px;
+}
+
+.tipo {
+  width: 30px;
+  height: 18px;
+}

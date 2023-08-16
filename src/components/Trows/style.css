@@ -1,0 +1,17 @@
+tr {
+  color: var(--color-text);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+td {
+  border-bottom: 1px solid var(--backgorund-body-label);
+}
+
+.green-text {
+  color: #16a34a;
+}
+
+.red-text {
+  color: #dc2626;
+}

@@ -1,27 +1,67 @@
-# React + TypeScript + Vite
+<div align="center">
+  <img src="https://git.raroacademy.com.br/uploads/-/system/appearance/logo/1/raroacademy.jpeg" alt="logo" width="70" height="auto" />
+  <h1>Exercício Avaliativo Raro Finanças</h1>
+</div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 💡 **Proposta**
 
-Currently, two official plugins are available:
+Exercício avaliativo da Raro Academy.  
+Desenvolver uma Landing Page de finançãs em React usando useStates para fazer suas funcionalidades!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✍️ **Processo**
 
-## Expanding the ESLint configuration
+    . Marcação semântica HTML5
+    . Propriedades personalizadas de CSS3
+    . Flexbox
+    . TypeScript
+    . React
+    . Design responsivo
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## ⚙ **Funcionalidades**
 
-- Configure the top-level `parserOptions` property like this:
+    - Realizar abertura de Modal quando clicar no botão transação
+    - No modal aparece na tela um formulário com informaçoes de transação
+    - No formulário temos dois botões, um cancelar que fecha o Modal outro Adicionar para adicionar a nova transação
+    - Quando adiocionar nova transação aparecer a propria transação na lista de transações
+    - Mostrar da aba de Dash o resultado das transaçoes sendo eles valores de entrada, saida, saldo
+    - Alterar saldo de acordo com casa transação seja ela de entrada ou saida  
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+## 💪 **Desafios**
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+      - Trabalhar com React foi muito legal e ao mesmo tempo desafiador
+      - Esse foi meu primeiro contato com o React e tive bastante dificuldade em Saber o que componentizar, acabei fazendo mais componentes que precisava. 
+      - Como criei mais componentes que precisava tambem tive muita dificuldade em passar coisas de um componente pro outro
+      - Lidar com estados pela primeira vez tambem foi um desafio grande.
+      - Minha maior dificulda foi em iniciar os processos, pois criei muitos componentes e nao sabia por qual iniciar.
+
+#### Tela principal de cadastro desktop
+
+<p align="center">
+  <img src="src/design/desktop.png" alt="Imagem exibindo a versão desktop  do site" width="350">
+  <img src="src/design/desktop-transacoes.png" alt="Imagem exibindo a versão desktop  do site" width="350">
+  <img src="src/design/desktop-modal.png" alt="Imagem exibindo a versão desktop  do site" width="350">
+</p>
+
+#### Tela de login e cadastro tablet e mobile
+
+<p align="center">
+  <img src="src/design/mobile.png" alt="Imagem exibindo a versão desktop  do site" width="350">
+
+</p>
+
+
+
+## 👩‍💻 **Dev**
+
+<table align="center">
+    <tr>  
+        <td align="center">
+            <div>
+                <img src="https://avatars.githubusercontent.com/u/110488969?v=4"width="120px;" alt="Foto de Kelvin no GitHub"/><br>
+                    <b> Kelvin Charles </b><br>
+                        <a href="https://www.linkedin.com/in/kelvin-charles/" alt="Linkedin"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" height="20"></a>
+                        <a href="https://github.com/kelvincharlesdev" alt="GitHub"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" height="20"></a>
+            </div>
+        </td>
+    </tr>
+</table>

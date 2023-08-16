@@ -55,3 +55,21 @@
     gap: 16px;
     align-self: stretch;
   }
+
+  @media(max-width: 678px){
+    .form{
+      width: 500px;
+    }
+  }
+
+  @media(max-width: 521px){
+    .form{
+      width: 400px;
+    }
+  }
+
+  @media(max-width: 417px){
+    .form{
+      width: 350px;
+    }
+  }

@@ -6,19 +6,21 @@ interface IInput{
     name: string;
     placeholder: string;
     value?: string;
-
+    id: string;
 }
 
-export const Input = ({text, type, name, placeholder, value}: IInput) =>{
+export const Input = ({text, type, name, placeholder, value, id }: IInput) =>{
     return (
         <div className="input">
         <label htmlFor={name}>{text}</label>
         <input
+          id={id}  
           type={type}
           name={name}
+          step={"any"}
           placeholder={placeholder}
-          id={name}
           value={value}
+          required
         />
       </div>
     )

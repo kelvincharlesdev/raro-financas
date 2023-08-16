@@ -7,3 +7,11 @@ tr {
 td {
   border-bottom: 1px solid var(--backgorund-body-label);
 }
+
+.green-text {
+  color: green;
+}
+
+.red-text {
+  color: red;
+}

@@ -5,10 +5,13 @@ interface IDash {
   svg: string;
   cardValue: string;
   color?: string;
+ 
 }
 
 export const Card = ({ tipo, svg, cardValue, color }: IDash) => {
   const split = cardValue.split(',');
+
+
 
   return (
     <div className="card">

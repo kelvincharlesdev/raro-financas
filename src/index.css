@@ -53,3 +53,27 @@ input{
   width: 100%;
   margin: 0 auto;
 }
+
+
+main {
+  display: flex;
+  height: calc(100vh - 151px);
+  flex-direction: column;
+  gap: 32px;
+  background-color: var(--background-main);
+}
+
+
+*::-webkit-scrollbar{
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track{
+ background: --backgorund-cards;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--background-main);
+  border-radius: 10px;
+  border: 3px solid var(--background-white);
+}

@@ -12,14 +12,34 @@ footer {
   align-items: center;
 }
 
-.nome-aluno {
+.student-name {
   color: var(--color-text);
   font-size: 16px;
   font-weight: 600;
 }
 
-.nome-ecsola {
+.school-name {
     color: var(--color-text);
     font-size: 14px;
     font-weight: 400;
+}
+
+@media(max-width:850px ){
+
+  footer{
+    padding: 10px 120px;
   }
+
+  footer .container{
+    flex-direction: column;
+  }
+
+  .student-name{
+    font-size: 12px;
+  }
+
+  .school-name{
+    font-size: 10px;
+    text-align: center;
+  }
+}

@@ -1,8 +1,12 @@
 import './style.css';
+interface ICardButton{
+  callback: () => void;
+}
 
-export const CardButton = () => {
+export const CardButton = ({callback}: ICardButton) => {
+
   return (
-    <button className="btn">
+    <button className="btn" onClick={callback}>
       <figure className="img-plus">
         <img
           className="plus-sm"
@@ -15,3 +19,4 @@ export const CardButton = () => {
     </button>
   );
 };
+

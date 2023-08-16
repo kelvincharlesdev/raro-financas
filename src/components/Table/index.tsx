@@ -1,10 +1,14 @@
+import { ITransaction } from '../../types';
 import { Trows } from '../Trows';
 import './style.css';
 
-export const Table = () => {
+interface ITable {
+  transactions: ITransaction[];
+}
+
+export const Table = ( {transactions}:ITable) => {
   return (
     <table className="table">
-      <caption className="title-transations">Histórico de transações</caption>
       <thead>
         <tr>
           <th>Nome</th>
@@ -14,29 +18,17 @@ export const Table = () => {
           <th className="tipo">Tipo</th>
         </tr>
       </thead>
-
+      
       <tbody>
-        <Trows
-          nome="Valor de celular antigo"
-          data="01/08/2023"
-          categoria="Renda extra"
-          valor="1853,12"
-          tipo="+"
-        />
-        <Trows
-          nome="La ele"
-          data="01/08/2023"
-          categoria="Renda extra"
-          valor="1853,12"
-          tipo="-"
-        />
-        <Trows
-          nome="La ele 1000x"
-          data="01/08/2023"
-          categoria="Renda extra"
-          valor="1853,12"
-          tipo="+"
-        />
+          {transactions.map(transaction => (
+            <Trows key={Math.random()}
+              nome={transaction.nome} 
+              data={transaction.data}
+              categoria={transaction.categoria}
+              tipo={transaction.tipo}
+              valor={Number(transaction.valor).toLocaleString("pt-BR", {style: "currency", currency : "BRL"})}
+              />
+          ))}
       </tbody>
     </table>
   );

@@ -1,6 +1,7 @@
 .transations {
   display: flex;
   flex: 1 0 0;
+  padding: 0 20px;
   
 }
 
@@ -9,8 +10,26 @@
   border-radius: 20px;
   background: var(--backgorund-cards);
   box-shadow: 5px 15px 30px -5px var(--color-box-shadow);
-  max-height: calc(100vh - 367px);
   height: 100%;
   padding: 24px;
+  max-height: calc(100vh - 367px);
+  
 }
 
+
+.transation-table{
+  overflow: auto;
+  max-height: calc(100vh - 425px);
+}
+
+@media(max-width: 920px){
+  .transations .container {
+    max-height: calc(100vh - 425px);
+  }
+  
+  .transation-table{
+    overflow: auto;
+    max-height: calc(100vh - 483px);
+  }
+
+}

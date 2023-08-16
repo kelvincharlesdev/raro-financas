@@ -11,6 +11,7 @@
   background-color: var(--background-header);
   box-shadow: 5px 15px 30px -5px var(--color-box-shadow);
   cursor: pointer;
+  padding: 0 20px;
 }
 
 .title-transacao {
@@ -29,4 +30,12 @@
   align-items: center;
   border-radius: 6px;
   background-color: var(--background-svg-plus);
+}
+
+@media (max-width: 900px){
+
+  .btn{
+    height: 50px;
+    min-width: 100%;
+  }
 }

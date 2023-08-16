@@ -5,6 +5,8 @@
   top: 0;
   left: 0;
   background-color: var(--background-modal-tranparent);
+  display: none;
+  z-index: 1;
 }
 
 .content-modal {
@@ -14,5 +16,9 @@
   height: 100vh;
 }
 
+
+.open{
+  display: block;
+}
 
 

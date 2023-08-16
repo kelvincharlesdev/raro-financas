@@ -1,10 +1,9 @@
 import './style.css';
-interface ICardButton{
+interface ICardButton {
   callback: () => void;
 }
 
-export const CardButton = ({callback}: ICardButton) => {
-
+export const CardButton = ({ callback }: ICardButton) => {
   return (
     <button className="btn" onClick={callback}>
       <figure className="img-plus">
@@ -14,9 +13,7 @@ export const CardButton = ({callback}: ICardButton) => {
           alt="Imagem de finanças"
         />
       </figure>
-      <h2 className='title-transacao'>TRANSAÇÃO</h2>
-      
+      <h2 className="title-transacao">TRANSAÇÃO</h2>
     </button>
   );
 };
-

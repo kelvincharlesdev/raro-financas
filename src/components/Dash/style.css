@@ -10,11 +10,9 @@
   justify-content: space-between;
 }
 
-@media(max-width: 920px){
-
-  .dash .container{
+@media (max-width: 920px) {
+  .dash .container {
     display: flex;
     flex-wrap: wrap;
   }
-
 }

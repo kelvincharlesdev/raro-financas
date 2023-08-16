@@ -46,12 +46,11 @@
   font-size: 19px;
 }
 
-
-@media(max-width: 920px){
-  .card-inf{
+@media (max-width: 920px) {
+  .card-inf {
     gap: 5px;
   }
-  .card-title{
+  .card-title {
     font-size: 14px;
   }
 
@@ -61,8 +60,7 @@
     padding: 0px;
   }
 
-  .card-value{
+  .card-value {
     font-size: 20px;
   }
-
 }

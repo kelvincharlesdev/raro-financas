@@ -5,19 +5,16 @@ interface IDash {
   svg: string;
   cardValue: string;
   color?: string;
- 
 }
 
 export const Card = ({ tipo, svg, cardValue, color }: IDash) => {
   const split = cardValue.split(',');
 
-
-
   return (
     <div className="card">
       <div className="card-inf">
         <h3 className="card-title">{tipo}</h3>
-        <figure className="svg" style={{background: color}}>
+        <figure className="svg" style={{ background: color }}>
           <img src={`src/assets/${svg}`} alt="Imagem de Tranding-Up" />
         </figure>
       </div>

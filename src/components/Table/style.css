@@ -2,6 +2,7 @@
   border-collapse: collapse;
   max-width: 1152px;
   width: 100%;
+  max-height: calc(100vh - 367px);
 }
 
 .title-transations {
@@ -15,6 +16,10 @@ th {
   color: var(--backgorund-body-label);
   font-size: 14px;
   font-weight: 700;
+  position: sticky;   
+  top: 0;
+  background-color: var(--backgorund-cards);
+
 }
 
 th,td {
@@ -26,3 +31,5 @@ th,td {
   width: 30px;
   height: 18px;
 }
+
+

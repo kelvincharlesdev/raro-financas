@@ -1,4 +1,5 @@
 import './style.css';
+import '../../src/assets/plus-sm.svg'
 interface ICardButton {
   callback: () => void;
 }

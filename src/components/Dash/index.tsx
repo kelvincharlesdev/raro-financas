@@ -1,6 +1,9 @@
 import { CardButton } from '../CardButton';
 import { Card } from '../Card';
 import './style.css';
+import '../../assets/dolar.svg'
+import '../../assets/trending-up.svg'
+import '../../assets/trending-down.svg'
 
 interface IDash {
   callback: () => void;

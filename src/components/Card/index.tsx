@@ -15,7 +15,7 @@ export const Card = ({ tipo, svg, cardValue, color }: IDash) => {
       <div className="card-inf">
         <h3 className="card-title">{tipo}</h3>
         <figure className="svg" style={{ background: color }}>
-          <img src={`src/assets/${svg}`} alt="Imagem de Tranding-Up" />
+          <img src={`src/assets/${svg}`} alt="Imagem de Tranding" />
         </figure>
       </div>
 

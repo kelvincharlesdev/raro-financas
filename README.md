@@ -6,7 +6,7 @@
 ## 💡 **Proposta**
 
 Exercício avaliativo da Raro Academy.  
-Desenvolver uma Landing Page de finançãs em React usando useStates para fazer suas funcionalidades!
+Desenvolver uma Landing Page de finanças em React usando useStates para fazer suas funcionalidades!
 
 ## ✍️ **Processo**
 

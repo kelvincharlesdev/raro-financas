@@ -12,7 +12,7 @@ export const Header = () => {
         <div className="user">
           <div className="user-inf">
             <p className="user-name">Kelvin Charles</p>
-            <p className="user-email">kelvin@raroacademy.com</p>
+            <p className="user-email">kelvincharlesdev@gmail.com</p>
           </div>
           <img
             className="user-img"

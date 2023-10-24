@@ -8,20 +8,21 @@ footer {
 
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
 .student-name {
   color: var(--color-text);
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 600;
 }
 
-.school-name {
-  color: var(--color-text);
-  font-size: 14px;
+.name {
+  color: var(--background-header);
+  font-size: 16px;
   font-weight: 400;
+  text-decoration: none;
 }
 
 @media (max-width: 850px) {

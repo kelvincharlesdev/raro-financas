@@ -8,11 +8,18 @@ import { ITransaction } from './types';
 
 const transactionData: ITransaction[] = [
   {
-    nome: 'Kelvin Charles da Cruz',
-    data: '2023-08-01',
-    categoria: 'Prêmio da Mega-Sena',
-    valor: '700000',
+    nome: 'Bônus',
+    data: '10/01/2023',
+    categoria: 'Metas Batidas',
+    valor: '8000',
     tipo: '+'
+  },
+  {
+    nome: 'Férias',
+    data: '10/21/2023',
+    categoria: 'Viagem',
+    valor: '3200',
+    tipo: '-'
   }
 ];
 

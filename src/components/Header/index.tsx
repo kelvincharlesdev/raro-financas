@@ -5,7 +5,7 @@ export const Header = () => {
     <header>
       <div className="container">
         <figure className="logo">
-          <img src="src/assets/credit-card.svg" alt="Imagem de finanças" />
+          <img src="credit-card.svg" alt="Imagem de finanças" />
           <figcaption className="logo-title">Raro Finanças</figcaption>
         </figure>
 
@@ -16,7 +16,7 @@ export const Header = () => {
           </div>
           <img
             className="user-img"
-            src="src/assets/foto-perfil.png"
+            src="foto-perfil.png"
             alt="Imagem do  usuário"
           />
         </div>

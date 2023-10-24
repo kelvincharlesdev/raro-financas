@@ -4,10 +4,7 @@ export const Footer = () => {
   return (
     <footer>
       <div className="container">
-        <p className="student-name">Kelvin Charles da Cruz</p>
-        <p className="school-name">
-          Desenvolvido durante o curso de React da Raro Academy
-        </p>
+        <p className="student-name">Code by <a className='name ' href="https://github.com/kelvincharlesdev" target='_blank'>Kelvin Charles da Cruz</a> </p>
       </div>
     </footer>
   );

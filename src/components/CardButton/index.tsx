@@ -1,5 +1,4 @@
 import './style.css';
-import '../../assets/plus-sm.svg'
 interface ICardButton {
   callback: () => void;
 }
@@ -10,7 +9,7 @@ export const CardButton = ({ callback }: ICardButton) => {
       <figure className="img-plus">
         <img
           className="plus-sm"
-          src="src/assets/plus-sm.svg"
+          src="plus-sm.svg"
           alt="Imagem de finanças"
         />
       </figure>

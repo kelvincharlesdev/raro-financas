@@ -74,14 +74,14 @@ export const Form = ({ callBack, fecharModal }: IForm) => {
           <div className="input-radio">
             <input type="radio" id="entrada" name="tipo" value="+" required />
             <label htmlFor="entrada">
-              <img src="src/assets/trending-up.svg" alt="Imagem tranding up" />
+              <img src="trending-up.svg" alt="Imagem tranding up" />
               Entrada
             </label>
 
             <input type="radio" id="saida" name="tipo" value="-" required />
             <label htmlFor="saida">
               <img
-                src="src/assets/trending-down.svg"
+                src="trending-down.svg"
                 alt="Imagem tranding down"
               />
               Saída
@@ -93,13 +93,13 @@ export const Form = ({ callBack, fecharModal }: IForm) => {
       <div className="btns">
         <ButtonForm
           className="btn-modal cancelar"
-          imgSrc="src/assets/x.svg"
+          imgSrc="x.svg"
           text="Cancelar"
           calllack={() => fecharModal(false)}
         />
         <ButtonForm
           className="btn-modal adicionar"
-          imgSrc="src/assets/check.svg"
+          imgSrc="check.svg"
           text="Adicionar"
           type="submit"
         />
